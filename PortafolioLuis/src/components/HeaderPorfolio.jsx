@@ -7,21 +7,21 @@ export class HeaderPorfolio extends React.Component {
     render() { 
         return (
             <>
-                <header>
-                  <h2 className="text-3xl font-bold  text-center p-2 text-red-700 ">Luis Carlos Mosquera</h2>  
-                </header>
+                <header className="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
+                
                 <div className="flex justify-center">
-                        <nav className=" w-max rounded-full border px-2 py-0.5 dark:text-red-600 dark:border-red-700/90 dark:bg-red-700/25">
-                            <ul className=" flex justify-center content-start gap-5 hover:*:text-red-300 hover:*:bg-neutral-900 *:rounded-full *:px-2 *:py-0.5">
+                        <nav className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+                            <ul className=" *:relative flex justify-center content-start gap-2 transition hover:*:text-red-600 *:rounded-full *:px-2 *:py-2">
                                 <li><a href="#">Experiencia</a></li>
                                 <li><a href="#">Proyectos</a></li>
-                                <li><a href="#">Sobre mi</a></li>
+                                <li><a href="#">Sobre mí</a></li>
                                 <li><a href="#">Contacto</a></li>
                             
                             </ul>
                         </nav>
 
                     </div>
+                </header>
             </>  
         );
     }    
