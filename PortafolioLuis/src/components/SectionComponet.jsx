@@ -1,8 +1,11 @@
 import React from "react";
 
-const SectionComponent = ({ children }) => {
+const SectionComponent = ({ children, id, className }) => {
   return (
-    <section className="w-full lg:w-[740px] mx-auto max-w-xl py-44">
+    <section
+      id={id} // Aquí se asigna el id correctamente
+      className={className}
+    >
       {children}
     </section>
   );

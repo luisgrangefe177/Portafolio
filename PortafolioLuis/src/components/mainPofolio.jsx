@@ -4,6 +4,9 @@ import Linkedin from "./icon/linkedin.svg";
 import EmailIcon from "./icon/email.svg";
 import SectionComponent from "./SectionComponet";
 import { Experience } from "./Experience";
+import tie from "./icon/tie.svg";
+import codeUser from "./icon/codeUser.svg";
+import { Proyects } from "./poyects";
 
 export class MainsPorfolio extends React.Component {
   constructor() {
@@ -13,8 +16,8 @@ export class MainsPorfolio extends React.Component {
     return (
       <>
         <main className="text-white px-4">
-          <SectionComponent>
-            <h1 className="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4 items-center">
+          <SectionComponent className="w-full lg:w-[740px] mx-auto max-w-xl py-44 pb-24">
+            <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 items-center">
               Hola, soy Luis{" "}
               <a
                 className="flex items-center transition md:justify-center md:hover:scale-105"
@@ -30,7 +33,7 @@ export class MainsPorfolio extends React.Component {
                 </span>
               </a>
             </h1>
-            <h2 className="text-xl opacity-80">
+            <h2 className="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
               1 año de Experiencia{" "}
               <span className="text-red-500">
                 Analista y desarrollador de sistemas de infromación
@@ -38,27 +41,45 @@ export class MainsPorfolio extends React.Component {
               de la ciudad Bogotá, Colombia interesado en el desarrollo web.
             </h2>
 
-            <nav className="flex gap-x-2 mt-8 *:rounded-full *:border *:border-white/10 *:flex *:justify-center *:items-center *:gap-x-2 *:py-1 *:px-4 *:bg-white/5 hover:*:scale-110 *:transition hover:*:bg-white/10">
+            <nav className="flex *flex-wrap gap-4 mt-8 *:rounded-full *:border *:border-white/10 *:flex *:justify-center *:items-center *:gap-x-2 *:py-1 *:px-2 ms:*:py-2 ms:*:px-4 *:text-xs ms:*:text-base *:bg-white/5 hover:*:scale-110 *:transition hover:*:bg-white/10">
               <a
                 href="https://www.linkedin.com/in/luis-mosquera-desarollo/"
                 target="_blank"
               >
-                <img src={Linkedin} alt="" className="size-4" />
+                <img src={Linkedin} alt="" className="size-3 md:size-4" />
                 Linkedin
               </a>
               <a href="https://github.com/luisgrangefe177" target="_blank">
-                <img src={LogoGuitD} alt="" className=" size-4" />
+                <img src={LogoGuitD} alt="" className=" size-3 md:size-4" />
                 Github
               </a>
               <a href="mailto:luiscamosquera00@gmail.com">
-                <img src={EmailIcon} alt="" className=" size-4" />
-                Email
+                <img src={EmailIcon} alt="" className="size-4 md:size-6" />
+                luiscamosquera00@gmail.com
               </a>
             </nav>
           </SectionComponent>
         </main>
-        <SectionComponent>
+        <SectionComponent
+          id="experiencia"
+          className="w-full lg:w-[740px] mx-auto max-w-xl pt-14 pb-24"
+        >
+          <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
+            <img className="size-8" src={tie} alt="" />
+            Experinecia laboral
+          </h2>
           <Experience />
+        </SectionComponent>
+
+        <SectionComponent
+          id="proyectos"
+          className="w-full lg:w-[740px] mx-auto max-w-xl pt-14 pb-24"
+        >
+          <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
+            <img className="size-8" src={codeUser} alt="" />
+            Proyectos
+          </h2>
+          <Proyects />
         </SectionComponent>
       </>
     );
