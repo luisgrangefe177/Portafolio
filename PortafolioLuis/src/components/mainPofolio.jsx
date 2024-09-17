@@ -7,6 +7,7 @@ import { Experience } from "./Experience";
 import tie from "./icon/tie.svg";
 import codeUser from "./icon/codeUser.svg";
 import { Proyects } from "./poyects";
+import { Footer } from "./footer";
 
 export class MainsPorfolio extends React.Component {
   constructor() {
@@ -81,6 +82,7 @@ export class MainsPorfolio extends React.Component {
           </h2>
           <Proyects />
         </SectionComponent>
+        <Footer></Footer>
       </>
     );
   }
