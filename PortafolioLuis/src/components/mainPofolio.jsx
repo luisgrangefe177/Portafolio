@@ -8,6 +8,7 @@ import tie from "./icon/tie.svg";
 import codeUser from "./icon/codeUser.svg";
 import { Proyects } from "./poyects";
 import { Footer } from "./footer";
+import LuisSobremi from "./img/Luisito.webp";
 
 export class MainsPorfolio extends React.Component {
   constructor() {
@@ -17,7 +18,7 @@ export class MainsPorfolio extends React.Component {
     return (
       <>
         <main className="text-white px-4">
-          <SectionComponent className="w-full lg:w-[740px] mx-auto max-w-xl py-44 pb-24">
+          <SectionComponent className="section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
             <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 items-center">
               Hola, soy Luis{" "}
               <a
@@ -60,28 +61,73 @@ export class MainsPorfolio extends React.Component {
               </a>
             </nav>
           </SectionComponent>
-        </main>
-        <SectionComponent
-          id="experiencia"
-          className="w-full lg:w-[740px] mx-auto max-w-xl pt-14 pb-24"
-        >
-          <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
-            <img className="size-8" src={tie} alt="" />
-            Experinecia laboral
-          </h2>
-          <Experience />
-        </SectionComponent>
 
-        <SectionComponent
-          id="proyectos"
-          className="w-full lg:w-[740px] mx-auto max-w-xl pt-14 pb-24"
-        >
-          <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
-            <img className="size-8" src={codeUser} alt="" />
-            Proyectos
-          </h2>
-          <Proyects />
-        </SectionComponent>
+          <SectionComponent
+            id="experiencia"
+            className="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+          >
+            <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
+              <img className="size-8" src={tie} alt="" />
+              Experinecia laboral
+            </h2>
+            <Experience />
+          </SectionComponent>
+
+          <SectionComponent
+            id="proyectos"
+            className="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+          >
+            <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
+              <img className="size-8" src={codeUser} alt="" />
+              Proyectos
+            </h2>
+            <Proyects />
+          </SectionComponent>
+          <SectionComponent
+            id="sobremi"
+            className="py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+          >
+            <h1 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">
+              Sobre mi
+            </h1>
+            <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row ">
+              <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+                <p className="text-lg mb-4 text-pretty">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Magnam iure, id accusamus at, impedit cumque quidem omnis
+                  delectus sint recusandae aperiam dignissimos nihil dolore
+                  fugit quaerat voluptatibus quasi numquam in?
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur impedit distinctio dolores, ipsam libero modi
+                  minima consequuntur quod reprehenderit iure tenetur placeat
+                  atque maxime asperiores! Quam tenetur quo ad possimus!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Similique magnam iure nam quod quos nobis adipisci dolorum
+                  quas vel provident unde incidunt exercitationem voluptas vero
+                  tenetur mollitia, ipsam distinctio tempore.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequuntur magni similique doloremque officiis dolorum.
+                  Libero quisquam officiis illum voluptates deleniti laborum ad
+                  asperiores dolorem in a porro, eum velit! Temporibus!
+                </p>
+              </div>
+              <img
+                width="200"
+                height="200"
+                className="order-1 object-cover w-60 h-full p-1 md:order-2 lg:p-2  "
+                src={LuisSobremi}
+                alt=""
+                srcSet=""
+              />
+            </article>
+          </SectionComponent>
+        </main>
         <Footer></Footer>
       </>
     );

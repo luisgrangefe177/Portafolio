@@ -1,3 +1,14 @@
 body {
   font-family: "Onest Variable", sans-serif;
 }
+.animacionScroll {
+  animation: adjust-header linear both;
+  animation-timeline: scroll();
+  animation-range: 0 208px;
+}
+@keyframes adjust-header {
+  to {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+  }
+}
