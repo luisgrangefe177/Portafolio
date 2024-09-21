@@ -9,6 +9,7 @@ import codeUser from "./icon/codeUser.svg";
 import { Proyects } from "./poyects";
 import { Footer } from "./footer";
 import LuisSobremi from "./img/Luisito.webp";
+import susermi from "./icon/usermi.svg";
 
 export class MainsPorfolio extends React.Component {
   constructor() {
@@ -75,9 +76,9 @@ export class MainsPorfolio extends React.Component {
 
           <SectionComponent
             id="proyectos"
-            className="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+            className=" py-20 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
           >
-            <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center">
+            <h2 className="text-3xl font-semibold mb-10 flex gap-x-2 items-center ">
               <img className="size-8" src={codeUser} alt="" />
               Proyectos
             </h2>
@@ -85,12 +86,13 @@ export class MainsPorfolio extends React.Component {
           </SectionComponent>
           <SectionComponent
             id="sobremi"
-            className="py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+            className="py-14 md:py-5 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
           >
             <h1 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">
+              <img className="size-8" src={susermi} alt="" />
               Sobre mi
             </h1>
-            <article className="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row ">
+            <article className="flex flex-col items-center justify-center gap-5 text-gray-700 dark:text-gray-300 md:flex-row ">
               <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
                 <p className="text-lg mb-4 text-pretty">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -118,12 +120,11 @@ export class MainsPorfolio extends React.Component {
                 </p>
               </div>
               <img
-                width="200"
-                height="200"
-                className="order-1 object-cover w-60 h-full p-1 md:order-2 lg:p-2  "
+                width="300"
+                height="300"
+                className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-6 lg:p-2 lg:w-64 aspect-square rounded-2xl ring-black/70 dark:ring-white/20 "
                 src={LuisSobremi}
                 alt=""
-                srcSet=""
               />
             </article>
           </SectionComponent>

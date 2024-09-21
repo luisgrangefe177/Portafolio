@@ -50,7 +50,7 @@ export const Proyects = () => {
   const proyectos = [
     {
       id: 1,
-      title: "Sistema de Reservas de Hotel (CRUD)",
+      title: "Sistema de Reservas de Hotel",
       description:
         "Este proyecto es una aplicación básica de CRUD diseñada para gestionar reservas de un hotel. Permite a los usuarios realizar reservas y a los administradores iniciar sesión con credenciales seguras. Las contraseñas se cifran antes de ser almacenadas en la base de datos para garantizar la seguridad de la información.",
       link: "https://profound-bunny-69d085.netlify.app/",
@@ -85,6 +85,7 @@ export const Proyects = () => {
             </div>
             <div className="w-full md:w-1/2 md:max-w-lg">
               <h3 className="text-2xl font-bold text-red-500 dark:text-gray-100 mb-2">
+                <span className="text-red-500">(CRUD) </span>
                 {title}
               </h3>
               <p className="mt-2 text-gray-700 dark:text-gray-400">
