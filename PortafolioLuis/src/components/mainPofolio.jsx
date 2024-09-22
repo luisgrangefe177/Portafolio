@@ -10,6 +10,7 @@ import { Proyects } from "./poyects";
 import { Footer } from "./footer";
 import LuisSobremi from "./img/Luisito.webp";
 import susermi from "./icon/usermi.svg";
+import LuisInicio from "./img/Luisinicio.webp";
 
 export class MainsPorfolio extends React.Component {
   constructor() {
@@ -20,28 +21,39 @@ export class MainsPorfolio extends React.Component {
       <>
         <main className="text-white px-4">
           <SectionComponent className="section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
-            <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 items-center">
-              Hola, soy Luis{" "}
-              <a
-                className="flex items-center transition md:justify-center md:hover:scale-105"
-                target="_blank"
-                href="https://www.linkedin.com/in/luis-mosquera-desarollo/"
-              >
-                <span className="relative inline-flex overflow-hidden rounded-full p-[1px] w-90 h-8">
-                  {" "}
-                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#b31111_0%,#21554E_50%,#b31111_100%)]"></span>{" "}
-                  <div className="inline-flex items-center justify-center w-full px-2 py-1 text-sm text-red-900 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">
-                    Disponible para trabajar
-                  </div>
-                </span>
-              </a>
-            </h1>
+            <div className="flex gap-4 mb-4 pb-3 lg:pb-2">
+              <img
+                className="rounded-full shadow-lg size-16"
+                src={LuisInicio}
+                alt=""
+              />
+              <div className="flex-row">
+                <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-2 lg:pb-4 items-center">
+                  Hola, Soy Luis{" "}
+                </h1>
+                <a
+                  className="flex w-44 transition md:hover:scale-110"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/luis-mosquera-desarollo/"
+                >
+                  <span className="relative inline-flex overflow-hidden rounded-full p-[1px] w-90 h-8">
+                    {" "}
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#b31111_0%,#21554E_50%,#b31111_100%)]"></span>{" "}
+                    <div className="inline-flex items-center justify-center w-full px-2 py-1 text-sm text-red-900 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">
+                      Disponible para trabajar
+                    </div>
+                  </span>
+                </a>
+              </div>
+            </div>
             <h2 className="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
-              1 año de Experiencia{" "}
               <span className="text-red-500">
-                Analista y desarrollador de sistemas de infromación
+                Desarrollador Web Full Stack en Bogotá.
               </span>{" "}
-              de la ciudad Bogotá, Colombia interesado en el desarrollo web.
+              Con un año de experiencia, he trabajado en proyectos que abarcan
+              desde el diseño hasta la implementación de soluciones web. Me
+              apasiona aprender cada día de programación y de las nuevas
+              tecnologías que se ven en el mundo TECH.
             </h2>
 
             <nav className="flex *flex-wrap gap-4 mt-8 *:rounded-full *:border *:border-white/10 *:flex *:justify-center *:items-center *:gap-x-2 *:py-1 *:px-2 ms:*:py-2 ms:*:px-4 *:text-xs ms:*:text-base *:bg-white/5 hover:*:scale-110 *:transition hover:*:bg-white/10">
@@ -49,15 +61,27 @@ export class MainsPorfolio extends React.Component {
                 href="https://www.linkedin.com/in/luis-mosquera-desarollo/"
                 target="_blank"
               >
-                <img src={Linkedin} alt="" className="size-3 md:size-4" />
+                <img
+                  src={Linkedin}
+                  alt="logo de linkedin"
+                  className="size-3 md:size-4"
+                />
                 Linkedin
               </a>
               <a href="https://github.com/luisgrangefe177" target="_blank">
-                <img src={LogoGuitD} alt="" className=" size-3 md:size-4" />
+                <img
+                  src={LogoGuitD}
+                  alt="logo de Github"
+                  className="size-3 md:size-4"
+                />
                 Github
               </a>
               <a href="mailto:luiscamosquera00@gmail.com">
-                <img src={EmailIcon} alt="" className="size-4 md:size-6" />
+                <img
+                  src={EmailIcon}
+                  alt="logo de envio de email"
+                  className="size-4 md:size-6"
+                />
                 luiscamosquera00@gmail.com
               </a>
             </nav>
@@ -93,30 +117,49 @@ export class MainsPorfolio extends React.Component {
               Sobre mi
             </h1>
             <article className="flex flex-col items-center justify-center gap-5 text-gray-700 dark:text-gray-300 md:flex-row ">
-              <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+              <div className="[&>p]:mb-4 [&>p>strong]:text-red-500 dark:[&>p>strong]:text-red-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
                 <p className="text-lg mb-4 text-pretty">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Magnam iure, id accusamus at, impedit cumque quidem omnis
-                  delectus sint recusandae aperiam dignissimos nihil dolore
-                  fugit quaerat voluptatibus quasi numquam in?
+                  Soy una persona apasionada por el desarrollo de sistemas, con
+                  experiencia en análisis y desarrollo de software.
+                  <strong> Me especializo en tecnologías full-stack, </strong>
+                  trabajando con herramientas como HTML, CSS, JavaScript, React,
+                  MySQL, Python y Git.{" "}
+                  <strong>
+                    Una de mis fortalezas es mi capacidad para aprender
+                    rápidamente y adaptarme a nuevas tecnologías.
+                  </strong>
                 </p>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Aspernatur impedit distinctio dolores, ipsam libero modi
-                  minima consequuntur quod reprehenderit iure tenetur placeat
-                  atque maxime asperiores! Quam tenetur quo ad possimus!
+                <p className="text-lg mb-4 text-pretty">
+                  Mi objetivo es seguir aprendiendo y fortaleciendo mis
+                  conocimientos en el desarrollo de software.{" "}
+                  <strong>
+                    Aspiro a convertirme en un experto en la creación de
+                    sistemas sostenibles y eficientes{" "}
+                  </strong>{" "}
+                  que realmente hagan una diferencia en la vida de las personas.
                 </p>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Similique magnam iure nam quod quos nobis adipisci dolorum
-                  quas vel provident unde incidunt exercitationem voluptas vero
-                  tenetur mollitia, ipsam distinctio tempore.
+                <p className="text-lg mb-4 text-pretty">
+                  Tuve la oportunidad de participar en una hackathon donde,
+                  junto a mi equipo, desarrollamos un sistema gaming para
+                  compensar,{" "}
+                  <strong>
+                    {" "}
+                    lo que nos llevó a obtener el primer lugar en la categoría
+                    intermedia y clasificar al nivel Bogotá.{" "}
+                  </strong>{" "}
+                  Esta experiencia me permitió fortalecer mis habilidades
+                  técnicas y de trabajo en equipo.
                 </p>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Consequuntur magni similique doloremque officiis dolorum.
-                  Libero quisquam officiis illum voluptates deleniti laborum ad
-                  asperiores dolorem in a porro, eum velit! Temporibus!
+                <p className="text-lg mb-4 text-pretty">
+                  Me considero una persona carismática, positiva, humilde y
+                  respetuosa. Además,{" "}
+                  <strong>
+                    {" "}
+                    cuento con excelentes habilidades de comunicación y me
+                    encanta trabajar en equipo,{" "}
+                  </strong>{" "}
+                  lo que me ha permitido contribuir de manera efectiva en los
+                  proyectos en los que he participado
                 </p>
               </div>
               <img

@@ -5,7 +5,7 @@ export class Footer extends React.Component {
     return (
       <>
         <footer className="bg-gray-800/10 rounded-lg shadow mx-auto px-4">
-          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <div className="w-full flex gap-4 justify-center p-4 mx:flex mx:items-center mx:justify-between">
             <span className="text-sm text-white/90 sm:text-center ">
               © 2024{" "}
               <a

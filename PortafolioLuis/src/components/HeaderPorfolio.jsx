@@ -21,7 +21,7 @@ export class HeaderPorfolio extends React.Component {
                   <a href="#sobremi">Sobre mí</a>
                 </li>
                 <li>
-                  <a href="#contactame">Contacto</a>
+                  <a href="#contactame">Contactar</a>
                 </li>
               </ul>
             </nav>

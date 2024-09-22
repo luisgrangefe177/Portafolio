@@ -2,18 +2,29 @@ import React from "react";
 
 export class Experiencie_items extends React.Component {
   render() {
-    const { title, description, link, date } = this.props;
+    const { title, description, link, date, empresa } = this.props;
 
     return (
       <>
-        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time className="mb-1 text-sm font-normal leading-none text-red-500/50">
-          {date}
-        </time>
-        <h3 className="text-xl font-bold text-red-500 ">{title}</h3>
-        <p className="mb-4 text-base font-normal text-gray-200 text-pretty">
-          {description}
-        </p>
+        <div className="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+          <div className="relative pb-12 md:col-span-2">
+            <div className="sticky top-0">
+              <span className="text-red-500 -left-[42px] absolute rounded-full text-5xl">
+                •
+              </span>
+              <h3 className="text-xl font-bold text-red-500 ">{title}</h3>
+              <h5 className="text-xl">{empresa}</h5>
+              <time className="mb-1 text-sm font-normal leading-none text-red-500/50">
+                {date}
+              </time>
+            </div>
+          </div>
+          <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+            <p className="mb-4 text-base font-normal text-gray-200 text-pretty">
+              {description}
+            </p>
+          </div>
+        </div>
         {link && (
           <a
             href={link}
