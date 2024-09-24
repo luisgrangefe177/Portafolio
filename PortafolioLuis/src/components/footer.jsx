@@ -14,7 +14,7 @@ export class Footer extends React.Component {
               >
                 Luis Carlos Mosquera
               </a>
-              . Casi todos los derechos reservados y inpirado en Midudev.
+              . Casi todos los derechos reservados y inspirado en Midudev.
             </span>
             <ul className="flex flex-wrap items-center mt-3 text-sm font-medium  sm:mt-0">
               <li>

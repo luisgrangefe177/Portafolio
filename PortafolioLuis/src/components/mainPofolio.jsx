@@ -50,7 +50,7 @@ export class MainsPorfolio extends React.Component {
               tecnologías que se ven en el mundo TECH.
             </h2>
 
-            <nav className="flex *flex-wrap gap-4 mt-8 *:rounded-full *:border *:border-white/10 *:border-gray-500 *:flex *:justify-center *:items-center *:gap-x-2 *:py-1 *:px-2 ms:*:py-2 ms:*:px-4 *:text-xs ms:*:text-base *:bg-white/5 hover:*:scale-110 *:transition hover:*:bg-white/10">
+            <nav className="flex *flex-wrap gap-4 mt-8 *:rounded-full *:border dark:*:border-white/10 *:border-gray-900 *:flex *:justify-center *:items-center *:gap-x-2 *:py-1 *:px-2 ms:*:py-2 ms:*:px-4 *:text-xs ms:*:text-base *:bg-white/5 hover:*:scale-110 *:transition hover:*:bg-white/10">
               <a
                 href="https://www.linkedin.com/in/luis-mosquera-desarollo/"
                 target="_blank"
