@@ -4,11 +4,37 @@ body {
 .animacionScroll {
   animation: adjust-header linear both;
   animation-timeline: scroll();
-  animation-range: 0 208px;
+  animation-range: 0 207px;
 }
+
 @keyframes adjust-header {
   to {
     background: rgba(0, 0, 0, 0.3);
-    font-size: 14px;
+    font-size: 11px;
+  }
+}
+
+/* Estilo para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  @keyframes adjust-header {
+    to {
+      background: rgba(0, 0, 0, 0.3); /* Fondo más claro para modo oscuro */
+      font-size: 11px;
+    }
+  }
+}
+
+/* Estilo para modo claro */
+@media (prefers-color-scheme: light) {
+  @keyframes adjust-header {
+    to {
+      background: rgba(
+        255,
+        255,
+        255,
+        0.3
+      ); /* Fondo más oscuro para modo claro */
+      font-size: 11px;
+    }
   }
 }

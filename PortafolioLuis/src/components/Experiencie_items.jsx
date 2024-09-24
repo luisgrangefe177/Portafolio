@@ -12,15 +12,17 @@ export class Experiencie_items extends React.Component {
               <span className="text-red-500 -left-[42px] absolute rounded-full text-5xl">
                 •
               </span>
-              <h3 className="text-xl font-bold text-red-500 ">{title}</h3>
-              <h5 className="text-xl">{empresa}</h5>
-              <time className="mb-1 text-sm font-normal leading-none text-red-500/50">
+              <h3 className="text-xl font-bold text-red-500">{title}</h3>
+              <h5 className="text-xl text-gray-800 dark:text-white">
+                {empresa}
+              </h5>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-700 dark:text-red-500/50">
                 {date}
               </time>
             </div>
           </div>
           <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
-            <p className="mb-4 text-base font-normal text-gray-200 text-pretty">
+            <p className="mb-4 text-base font-normal  text-pretty">
               {description}
             </p>
           </div>
